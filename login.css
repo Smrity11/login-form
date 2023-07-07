@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 100vh;
+height: 600px;
+background: url(images/GettyImages-10100201-scaled.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 100px;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+  
+}
+.logo{
+    font-size:30px;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+
+}
+.list a{
+    position: relative;
+    margin-left: 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+.list a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    left: 0px;
+    bottom: -6px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.list a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.list .button1{
+    margin-left: 40px;
+    padding: 10px;
+    width: 125px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight:500;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.list .button1:hover{
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+transition: .5s;
+}
+.list .button1:active{
+    transform: scale(0.96);
+}
+/* login form */
+
+.loginbox{
+    position: relative;
+    width: 370px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(135, 88, 88, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0  30px rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginbox .closeicon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.closeicon i{
+margin-top: 8px;
+font-size: 1.4rem;
+}
+.logintext{
+   width: 100%;
+   padding: 50px;
+   color:rgb(255, 255, 255);
+}
+.logintext h2{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px 35px 0px 5px;
+  
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+}
+.inputbox i{
+    position: absolute;
+    top: 50%;
+    right:5px;
+}
+.remember-forget{
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forget a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.remember-forget label input{
+    accent-color: black;
+    margin-right: 4px;
+}
+.button2{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px ;
+    margin-top: 25px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500px;
+}
+.button2:hover{
+  background-color: black;
+  color: white;
+}
+.button2:active{
+    transform: scale(0.96);
+}
+.login_register{
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.login_register a{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login_register p{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.login_register a:hover{
+    text-decoration: underline;
+}
